@@ -15,7 +15,7 @@
         [/#list]
         </select>
     
-        <select name="workplace" style="width:15%;">
+        <select name="workplace" style="width:15%;" >
         <option value="">任意</option>
         [#list workplace!?split(",") as opt]
         <option value="${opt!}"[#if queryWorkplace??][#if queryWorkplace=="${opt}"]selected="selected"[/#if][/#if]>${opt!}</option>

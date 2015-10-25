@@ -101,7 +101,7 @@ $(function() {
                 <div class="w350">
                     <div class="LanMu01b rim01">
                         <div class="LanMu01a"></div>
-                        <span>新闻资讯</span>
+                        <span>视点|资讯</span>
                     </div>
                     <div class="clear"></div>
                     <div class="xinwenzixun">
@@ -150,7 +150,7 @@ $(function() {
 			<div class="clear"></div>
             <div class="hundred100 mt10">
             	<!-- 视频_begin -->
-            	<div class="AreaTitle">电视剧 / 纪录片</div>
+            	<div class="AreaTitle">翻转课堂/微课</div>
                 <div class="leftAreaContent2">
                     <ul>
                         [@cms_content_list count='4' orderBy='4' titLen='24' channelId='49'  channelOption='1']
@@ -223,7 +223,7 @@ $(function() {
           <div class="clear"></div>
 			<div class="hundred100 mt10">
             	<!-- 图库_begin -->
-                <div class="AreaTitle">文体娱乐 / 美容资讯 / 文化校园 / 探索新知</div>
+                <div class="AreaTitle">图库：文体娱乐 / 美容资讯 / 文化校园 / 探索新知</div>
                 <div class="AreaContent1">
                     <ul class="box">
                         [@cms_content_list typeId='2' count='8' titLen='20' channelOption='1' channelId='42' orderBy='4']
@@ -247,7 +247,7 @@ $(function() {
              <div class="clear"></div>
              <div class="hundred100 mt10">
             	<!-- 下载_begin -->
-                <div class="AreaTitle">下载</div>
+                <div class="AreaTitle">资源分享</div>
                 <div class="downContent1">
                 	<ul>
                         [@cms_content_list count='3' orderBy='4' titLen='8' channelId='9' channelOption='1']
@@ -285,7 +285,7 @@ $(function() {
                 <!-- 下载_end -->
              </div>
              <div class="clear"></div>
-             <div class="hundred100 mt10">
+             <div class="hundred100 mt10" style="display:none;">
 				<!-- 网友留言_begin -->
                 <div class="AreaTitle">网友留言</div>
                 <div class="lybCon">
@@ -355,9 +355,9 @@ $(function() {
                     <div class="LanMu02a">大家爱看</div>
                 </div>
                 <div class="column">
-                    <h3 class="column-title lump-blue">时事</h3>
+                    <h3 class="column-title lump-blue">翻译|口译</h3>
                     <ul class="m-list list-main-normal">
-                    [@cms_content_list count='6' orderBy='7' titLen='19' channelId='14,40'  channelOption='1']
+                    [@cms_content_list count='6' orderBy='7' titLen='19' channelId='12,13'  channelOption='1']
                     [#list tag_list as a]
                     <li>
                     <a href="${a.url}" title="${a.title}" target="_blank">[@text_cut s=a.title len=titLen /]</a>
@@ -365,9 +365,9 @@ $(function() {
                     [/#list]
                     [/@cms_content_list]
                     </ul>
-                    <h3 class="column-title lump-green">基金</h3>
+                    <h3 class="column-title lump-green">高级翻译</h3>
                     <ul class="m-list list-main-normal">
-                    [@cms_content_list count='3' orderBy='7' titLen='19' channelId='40'  channelOption='1']
+                    [@cms_content_list count='3' orderBy='7' titLen='19' channelId='14'  channelOption='1']
                     [#list tag_list as a]
                       <li>
                     <a href="${a.url}" title="${a.title}" target="_blank">[@text_cut s=a.title len=titLen /]</a>
@@ -375,6 +375,7 @@ $(function() {
                     [/#list]
                     [/@cms_content_list]
                     </ul>
+                    <!--  
                     <h3 class="column-title lump-gray">社会</h3>
                     <ul class="m-list list-main-normal">
                     [@cms_content_list count='3' orderBy='7' titLen='19' channelId='13'  channelOption='1']
@@ -395,13 +396,15 @@ $(function() {
                     [/#list]
                     [/@cms_content_list]
                     </ul>
+                    -->
                 </div>
             </div>
             <!-- 大家爱看_end -->
-            <!-- 网络调查_begin -->
-            <div class="rim02 mt10">
+            
+            <!-- 网络调查_begin  由于从单个改成列表报错 故隐藏-->
+            <div class="rim02 mt10" style="display:none">
                 <div class="LanMu02b">
-                    <div class="LanMu02a">网络调查</div>
+                    <div class="LanMu02a">教学评价</div>
                 </div>
                 <div class="survey">
                 [#include "../include/vote.html"/]<br>
@@ -409,7 +412,7 @@ $(function() {
             </div>
             <!-- 网络调查_end -->
             <!-- 热门评论_begin -->
-            <div class="rim02 mt10">
+            <div class="rim02 mt10" style="display:none">
                 <div class="LanMu02b">
                     <div class="LanMu02a">热门评论</div>
                 </div>

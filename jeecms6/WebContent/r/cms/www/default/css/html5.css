@@ -132,7 +132,7 @@ img{ border:0; -ms-interpolation-mode:bicubic;}
 .lump-green{ background-color:#70A33B; background-image:none;}
 .lump-gray{ background-color:#656565; background-image:none;}
 .lump-red{ background-color:#DC233E; background-image:none;}
-.column-title{color:#FFF; font-size:12px; height:21px; line-height:21px; margin-bottom:5px; margin-top:10px; text-align:center; width:50px;}
+.column-title{color:#FFF; font-size:12px; height:21px; line-height:21px; margin-bottom:5px; margin-top:10px; text-align:center; width:60px;}
 
 .AreaTitle{ border-top:2px solid #206f96; border-bottom:1px solid #cfcfcf; background-color:#fbfbfb; height:29px; line-height:29px; width:100%; font-weight:bold; text-indent:10px;}
 .AreaContent1/*图库*/{ width:100%; margin:auto;}
@@ -159,19 +159,19 @@ img{ border:0; -ms-interpolation-mode:bicubic;}
 
 /*招聘*/
 .jobTitleBg{ height:24px; line-height:24px; width:99%; border-left:1px solid #e6e6e6; margin:auto;border-right:1px solid #e6e6e6; background-image:url(../img/index/jobListBg.gif); margin-top:10px;}
-.jobTitleBg h1{ font-size:12px; text-align:center; width:34%; border-right:1px solid #e6e6e6; float:left;}
-.jobTitleBg h2{ font-size:12px; text-align:center; width:34%; border-right:1px solid #e6e6e6; float:left;}
-.jobTitleBg h3{ font-size:12px; text-align:center; width:16%; border-right:1px solid #e6e6e6; float:left;}
-.jobTitleBg h4{ font-size:12px; text-align:center; width:14.7%; float:left;}
+.jobTitleBg h1{ font-size:12px; text-align:center; width:36%; border-right:1px solid #e6e6e6; float:left;}
+.jobTitleBg h2{ font-size:12px; text-align:center; width:15%; border-right:1px solid #e6e6e6; float:left;}
+.jobTitleBg h3{ font-size:12px; text-align:center; width:36%; border-right:1px solid #e6e6e6; float:left;}
+.jobTitleBg h4{ font-size:12px; text-align:center; width:20%; float:left;}
 
 .jobContent{ width:99%; margin:5px auto;}
 .jobContent ul{}
 .jobContent ul li{ line-height:27px; float:left; width:100%;}
 .jobContent ul li a{ font-size:12px;}
-.jobContent ul li h1{font-size:12px; text-align:center; float:left; width:34%; margin-right:1px;}
-.jobContent ul li h2{font-size:12px; text-align:center; float:left; width:34%; margin-right:1px;}
-.jobContent ul li h3{font-size:12px; text-align:center; float:left; width:16%; margin-right:1px;}
-.jobContent ul li h4{font-size:12px; text-align:center; float:left; width:14.7%;}
+.jobContent ul li h1{font-size:12px; text-align:center; float:left; width:36%; margin-right:1px;}
+.jobContent ul li h2{font-size:12px; text-align:center; float:left; width:15%; margin-right:1px;}
+.jobContent ul li h3{font-size:12px; text-align:center; float:left; width:36%; margin-right:1px;}
+.jobContent ul li h4{font-size:12px; text-align:center; float:left; width:20%;}
 
 /*下载*/
 .downContent1{ width:37%; float:left; margin:8px auto auto 1.5%;}
@@ -205,7 +205,7 @@ img{ border:0; -ms-interpolation-mode:bicubic;}
 .lybImg/*右边距4px*/{ float:left; margin-top:3px;}
 
 .yqlj/*友情链接*/{ width:100%; margin:10px auto auto auto; line-height:46px;}
-.yqljLeft/*36除以980*/{ background:#fbfbfb; color:#969696; font-weight:bold; float:left; width:10%; text-align:center; border:1px solid #dddddd;}
+.yqljLeft/*36除以980*/{ background:#fbfbfb; color:#969696; font-weight:bold; float:left; width:10%; height:92px; text-align:center; border:1px solid #dddddd;}
 .yqljRight{ float:left; width:89.5%; border-right:1px solid #dddddd; border-bottom:1px solid #dddddd; border-top:1px solid #dddddd;}
 
 
@@ -259,7 +259,7 @@ img{ border:0; -ms-interpolation-mode:bicubic;}
 .gnNews/*国内新闻*/{ float:left; width:49.2647%;}
 .gjNews/*国际新闻*/{ float:right; width:49.2647%;}
 .newsTitle2{ width:100%; height:36px; background-image:url(../img/news/titleBg2-2.gif);}
-.titleBg2Left/*栏目背景*/{ background-image:url(../img/news/titleBg2-1.gif); width:85px; height:36px; line-height:36px; float:left; font-weight:bold; text-indent:1em; color:#dc4143;}
+.titleBg2Left/*栏目背景*/{ background-image:url(../img/news/titleBg2-1.gif); width:130px; height:36px; line-height:36px; float:left; font-weight:bold; text-indent:1em; color:#dc4143;}
 .titleBg2Right{ float:right; color:#8d8d8d; padding-right:5px;}
 .titleBg2Right a{ line-height:36px; font-size:12px; color:#8d8d8d;}
 
@@ -323,6 +323,7 @@ img{ border:0; -ms-interpolation-mode:bicubic;}
 .w270{ float:left; width:270px; margin:auto auto auto 1.020408%;}
 .w980{ width:980px;}
 .w700{ float:left; width:700px;}
+.w7001{ float:left; width:100%;}
 .rim05{ border:1px solid #d8d8d8;}
 
 .HotAttention/*热点关注*/{ min-height:362px; width:100%;}
@@ -495,10 +496,10 @@ dl.rmpl dt span{ color:#d80c18;}
 .websurveylist ul{ padding-bottom:5px; padding-top:5px;}
 .websurveylist ul li{ text-indent:10px; line-height:24px;}
 .websurveylist ul li a{ font-size:12px;}
-.websurveylist ul li h1{font-size:12px; text-align:center; float:left; width:34%; margin-right:1px;}
-.websurveylist ul li h2{font-size:12px; text-align:center; float:left; width:33.8%; margin-right:1px;}
-.websurveylist ul li h3{font-size:12px; text-align:center; float:left; width:16%; margin-right:1px;}
-.websurveylist ul li h4{font-size:12px; text-align:center; float:left; width:14.7%;}
+.websurveylist ul li h1{font-size:12px; text-align:center; float:left; width:36%; margin-right:1px;}
+.websurveylist ul li h2{font-size:12px; text-align:center; float:left; width:15%; margin-right:1px;}
+.websurveylist ul li h3{font-size:12px; text-align:center; float:left; width:36%; margin-right:1px;}
+.websurveylist ul li h4{font-size:12px; text-align:center; float:left; width:20%;}
 .tptitle1{ height:30px; line-height:30px; padding:5px;}
 .tptitle1 span{ color:#F00;}
 

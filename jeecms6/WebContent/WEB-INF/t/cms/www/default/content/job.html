@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-<title>${title} - ${site.name} - Powered by JEECMS</title>
+<title>${title} - ${site.name} - Powered by 孔雁</title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta content="${content.tagStr!}" http-equiv="keywords" />
 <meta content="${content.description!}" http-equiv="description" />
@@ -69,7 +69,7 @@ Cms.siteFlow("${base}", location.href, document.referrer);
                 <td>${content.attr.nums!}</td>
               </tr>
               <tr>
-                <td height="30" align="right" bgcolor="#f6f6f6">工作地点：</td>
+                <td height="30" align="right" bgcolor="#f6f6f6">公司名称：</td>
                 <td>${content.attr.workplace!}</td>
                 <td align="right">职位类别：</td>
                 <td>${content.attr.category!}</td>
@@ -83,19 +83,19 @@ Cms.siteFlow("${base}", location.href, document.referrer);
         
 		<div class="newsCon">
         	<div class="jobDescription">职位描述</div>
-        <div class="jobAbout">${txt!}</div>
-       	<div class="jobDescription">公司介绍</div>
-        <div class="jobAbout">
-			<h5>${content.companyName!}</h5>
-                公司地址：${content.companyAddr!}<br/>
-                公司规模：${content.companyScale!}<br/>
-                公司性质：${content.companyNature!}<br/>
-                公司行业：${content.companyIndustry!}<br/>
-            </div>
-            <div class="jobDescription">公司简介</div>
-        <div class="jobAbout">${content.companyDesc!}</div>
-        <div class="jobDescription">联系方式</div>  
-        <div class="jobAbout">${content.companyContact!}</div>
+        	<div class="jobAbout">${txt!}</div>
+       		<div class="jobDescription">公司介绍</div>
+       		<div class="jobAbout">
+				<h5>${content.attr.workplace!}</h5>
+	                公司地址：${content.attr.yyCompanyAddr!}<br/>
+	                公司规模：${content.attr.yyCompanyScale!}<br/>
+	                公司性质：${content.attr.yyCompanyNature!}<br/>
+	                公司行业：${content.attr.yyCompanyIndustry!}<br/>
+        	</div>
+	        <div class="jobDescription">公司简介</div>
+	        <div class="jobAbout">${content.attr.yyCompanyDesc!}</div>
+	        <div class="jobDescription">联系方式</div>  
+	        <div class="jobAbout">${content.attr.yyCompanyContact!}</div>
         </div>
         <div class="pagebar">[#include "../style_page/content.html"/]</div>
         <div class="other box">[#if channel.allowUpdown]

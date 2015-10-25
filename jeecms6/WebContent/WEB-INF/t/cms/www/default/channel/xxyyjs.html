@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${channel.title!channel.name} - ${site.name} - Powered by 孔雁</title>
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+
+<!--[if lt IE 9]>
+<script src="${resSys}/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link href="/${res}/css/html5.css" rel="stylesheet" type="text/css"/>
+<link href="${resSys}/front.css" rel="stylesheet" type="text/css"/>
+
+<link href="${resSys}/jqueryUI/jquery.ui.css" rel="stylesheet" type="text/css"/>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/jqueryUI/jquery-ui.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script src="/${res}/js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	Cms.siteFlow("${base}", location.href, document.referrer);
+});
+</script>
+</head>
+<body>
+<div class="container">
+	[#include "../include/header.html"/]
+    [#include "../include/search_csi.html"/]
+    [#include "../include/navi.html"/]
+    <div class="w700 mt10">
+    	<!--语言信息技术_begin-->
+    	<div class="hundred100">
+            <div class="LineTitle02">
+                <h1>语言信息技术</h1>
+                <em>
+                [@cms_channel id='72']
+                <a href="${tag_bean.url}" target="_blank">更多>></a>
+                [/@cms_channel]
+                </em>
+            </div>
+            <div class="clear"></div>
+            <div class="HorLine3"></div>
+            <div class="HorLine4"></div>
+            <div class="clear"></div>
+            <div class="downContent3">
+                <ul>
+                    [@cms_content_list count='6' orderBy='4' titLen='8' channelId='72' channelOption='1']
+                    [#list tag_list as a]
+                      <li>
+                        <div class="downImg">
+                            <a href="${a.url}" class="figure" target="_blank">
+                            <img src="${a.titleImg!site.defImg}" width="48" height="46"/>
+                            </a>
+                        </div>
+                        <div class="downTex">
+                            <a href="${a.url}" title="${a.title}" target="_blank">[@text_cut s=a.title len=titLen /]</a>
+                            <p>[@text_cut s=a.desc len=12 /]</p>
+                            <p>
+                            <a href="${a.url}" target="_blank">
+                            <img src="../../${res}/img/index/downMenu.gif" width="61" height="23">
+                            </a>
+                            </p>
+                        </div>
+                    </li>
+                    [/#list]
+                    [/@cms_content_list]
+                </ul>
+            </div>
+    	</div>
+        <!--语言信息技术_end-->
+        <div class="clear"></div>
+    </div>
+    <div class="w270">
+    	<!-- 语言信息技术_begin -->
+        <div class="rim05 mt10">
+            <div class="LanMu01-2">
+                <div class="LanMu01-1"></div>
+                <span>语言信息技术</span>
+                <div class="LanMu01-3"></div>
+            </div>
+            <div class="softlist">
+                <ul>
+                    [@cms_content_list count='7' titLen='15' orderBy='7' channelOption='1' channelId='72']
+                    [#list tag_list as a]
+                    <li>
+                    <div class="v-rank3-order3 v-rank3-top3">${a_index+1}</div>
+                    <a href="${a.url}" title="${a.title}" target="_blank">
+                    [@text_cut s=a.title len=titLen /]
+                    </a>
+                    </li>
+                    [/#list]
+                    [/@cms_content_list]
+                </ul>
+            </div>
+        </div>
+    	<!-- 语言信息技术_end -->
+        <div class="clear-10"></div>
+    </div>
+	[#include "../include/friend_link.html"/]
+    [#include "../include/footer.html"/]
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <div class="w300 mt10">
     <!-- 今日话题_begin -->
-    <div class="rim04">
+    <div class="rim04" style="display:none">
         <div class="jrhtCon">
             <img src="../../${res}/img/news/jrht.gif"/>
             <div class="clear"></div>
@@ -39,9 +39,9 @@
     <div class="rim04">
         <div class="cjbdCon">
             <div class="titleBg1">
-                <h1>时事</h1><h2>评论</h2>
+                <h1>《翻译概论》</h1>
                 <em>
-                [@cms_channel id='14']<a href="${tag_bean.url}" target="_blank">
+                [@cms_channel id='11']<a href="${tag_bean.url}" target="_blank">
             更多>></a>[/@cms_channel]
                 </em>
             </div>
@@ -50,7 +50,7 @@
             </div>
             <div class="jrhtList">
                 <ul>
-                [@cms_content_list count='8' orderBy='4' titLen='18' channelId='14'  channelOption='1']
+                [@cms_content_list count='8' orderBy='4' titLen='18' channelId='11'  channelOption='1']
                 [#list tag_list as a]
                   <li>
                 <a href="${a.url}" title="${a.title}" target="_blank">
@@ -66,19 +66,19 @@
     <!-- 时事评论_end -->
     <div class="clear-10"></div>
     <!-- 图片新闻_begin -->
-    <div class="rim04">
+    <div class="rim04" >
         <div class="cjbdCon">
             <div class="titleBg1">
-                <h1>图片</h1><h2>新闻</h2>
+                <h1>翻译实践</h1>
                 <em>
-                [@cms_channel id='15']<a href="${tag_bean.url}" target="_blank">
+                [@cms_channel id='40']<a href="${tag_bean.url}" target="_blank">
             更多>></a>[/@cms_channel]
                 </em>
             </div>
             <div class="clear"></div>
             <div class="cjbdPic">
                 <ul>
-                    [@cms_content_list count='4' orderBy='4' typeId='2' titLen='10' channelId='15' channelOption='1']
+                    [@cms_content_list count='4' orderBy='4' typeId='2' titLen='10' channelId='40' channelOption='1']
                     [#list tag_list as a]
                     <li>
                         <a href="${a.url}" target="_blank">
@@ -99,7 +99,7 @@
     <!-- 图片新闻_end -->
     <div class="clear-10"></div>
     <!-- 娱乐新闻_begin -->
-    <div class="rim04">
+    <div class="rim04"  style="display:none;">
         <div class="cjbdCon">
             <div class="titleBg1">
                 <h1>娱乐</h1><h2>新闻</h2>

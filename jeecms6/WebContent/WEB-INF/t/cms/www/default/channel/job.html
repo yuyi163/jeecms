@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
+<title>${channel.title!channel.name} - ${site.name} - Powered by 孔雁</title>
 <meta http-equiv="keywords" content="${channel.keywords!}"/>
 <meta http-equiv="description" content="${channel.description!}"/>
 
@@ -47,24 +47,33 @@ $(function() {
             <div class="websurveylist">
 				<div class="jobTitleBg">
                 	<h1>职位名称</h1>
-                    <h2>公司名称</h2>
-                    <h3>工作地点</h3>
+                	 <!--  
+                    <h2>公司名称 </h2>
+                     -->
+                    <h3>公司名称</h3>
                     <h4>日期</h4>
                 </div>
-            [@cms_content_page channelId=channel.id count='20' titLen='15' append='...' orderBy='2'  channelOption='1']
+                
+                <div class="jobContent">
+            [@cms_content_page channelId=channel.id count='20' titLen='20' append='...' orderBy='2'  channelOption='1']
             <ul>
             [#list tag_pagination.list as content]
                 <li>
+                
                 <h1>
                 <a href="${content.url}" target=_blank>[@text_cut s=content.title len=titLen append=append/]</a>
                 </h1>
+                 <!--
                 <h2>${content.companyName!}</h2>
+                 -->
                 <h3>${content.attr.workplace!}</h3>
                 <h4>${content.releaseDate?string("yyyy-MM-dd")}</h4> [#rt/]
+                
                 </li>
             [/#list]
             </ul>
             [/@cms_content_page]
+            	</div>
             </div>
         </div>
     </div>

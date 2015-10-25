@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
+<title>${channel.title!channel.name} - ${site.name} - Powered by 孔雁</title>
 <meta http-equiv="keywords" content="${channel.keywords!}"/>
 <meta http-equiv="description" content="${channel.description!}"/>
 <head>
@@ -28,7 +28,7 @@ $(function() {
 	<!--焦点图_begin-->
     <div id="slider">
         <div class="slider_box" id="slider_name">
-            <div class="silder_tip" id="movie_tip">电影</div>
+            <div class="silder_tip" id="movie_tip">test</div>
             <ul class="silder_con">		
                 [@cms_content_list count='8' orderBy='4' typeId='3' titLen='10' channelId='46' channelOption='1']
                 [#list tag_list as a]
@@ -47,11 +47,11 @@ $(function() {
                     </h3>
                     <ul>
                         <li><label>类型：</label><span>${a.attr.VideoType!}</span></li>
-                        <li><label>导演：</label><span>${a.attr.Director!}</span></li>
+                        <li><label>作者：</label><span>${a.attr.Director!}</span></li>
                         <li><label>主演：</label><span>${a.attr.Starring!}</span></li>
                     </ul>
                     <p>
-                    [<strong>影片介绍</strong>]
+                    [<strong>介绍</strong>]
                     [@text_cut s=a.desc len=60 append='...'/]
                     </p>
                     <a class="silder_play" href="${a.url}" target="_blank">马上观看</a>
@@ -72,7 +72,7 @@ $(function() {
             <div class="HorLine1"></div>
             <div class="clear"></div>
             <div class="LineTitle01">
-                <h1>电视剧</h1>
+                <h1>翻转课堂</h1>
                 <em>
                 [@cms_channel id='49']
                 <a href="${tag_bean.url}" target="_blank">更多>></a>
@@ -109,7 +109,7 @@ $(function() {
             <div class="HorLine1"></div>
             <div class="clear"></div>
             <div class="LineTitle01">
-                <h1>记录片</h1>
+                <h1>微课</h1>
                 <em>
                 [@cms_channel id='50']
                 <a href="${tag_bean.url}" target="_blank">更多>></a>
@@ -140,14 +140,14 @@ $(function() {
         <!--记录片_end-->
         <div class="clear-10"></div>
         <!--电影_begin-->
-    	<div class="hundred100">
+    	<div class="hundred100" style="display:none;">
             <div class="HorLine2"></div>
             <div class="HorLine1"></div>
             <div class="clear"></div>
             <div class="LineTitle01">
                 <h1>电影</h1>
                 <em>
-                [@cms_channel id='61']
+                [@cms_channel id='51']
                 <a href="${tag_bean.url}" target="_blank">更多>></a>
                 [/@cms_channel]
                 </em>
@@ -183,7 +183,7 @@ $(function() {
     	<div class="rim02 mt10">
             <div class="LanMu01-2">
                 <div class="LanMu01-1"></div>
-                <span>电视剧点播排行榜</span>
+                <span>翻转课堂点播排行榜</span>
                 <div class="LanMu01-3"></div>
             </div>
             <div class="tvphb">
@@ -212,7 +212,7 @@ $(function() {
     	<div class="rim02">
             <div class="LanMu01-2">
                 <div class="LanMu01-1"></div>
-                <span>记录片点播排行榜</span>
+                <span>微课点播排行榜</span>
                 <div class="LanMu01-3"></div>
             </div>
             <div class="tvphb">
@@ -238,7 +238,7 @@ $(function() {
         <!--记录片点播排行榜_end-->
         <div class="clear-10"></div>
         <!--电影点播排行榜_begin-->
-    	<div class="rim02">
+    	<div class="rim02" style="display:none;">
             <div class="LanMu01-2">
                 <div class="LanMu01-1"></div>
                 <span>电影点播排行榜</span>

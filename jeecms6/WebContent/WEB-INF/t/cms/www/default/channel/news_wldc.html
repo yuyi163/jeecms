@@ -29,12 +29,14 @@ $(function() {
 	[#include "../include/header.html"/]
     [#include "../include/search_csi.html"/]
     [#include "../include/navi.html"/]
-	
-	<div class="w700 mt10">
+    
+	[@cms_vote_list orderBy='2' siteId=site.id]
+	[#list tag_list as vote]
+	<div class="w7001 mt10">
         <div class="rim05">
             <div class="LanMu01-2">
             <div class="LanMu01-1"></div>
-            <span>${channel.name!}</span>
+            <span>${vote.title?html}</span>
             <div class="LanMu01-3"></div>
             </div>
             <div class="survey">
@@ -42,8 +44,9 @@ $(function() {
             </div>
         </div>
 	</div>  
-  
-    <div class="w270">
+  [/#list]
+  [/@cms_vote_list]
+    <div class="w270" style="display:none">
     	<div class="rim05 mt10">
             <div class="LanMu01-2">
                 <div class="LanMu01-1"></div>
@@ -60,8 +63,8 @@ $(function() {
                 </ul>
             </div>
     	</div>   
-        <div class="clear-10"></div> 
-        <div class="rim05">
+        <div class="clear-10" style="display:none"></div> 
+        <div class="rim05" style="display:none">
             <div class="LanMu01-2">
             <div class="LanMu01-1"></div>
             <span>往期调查</span>

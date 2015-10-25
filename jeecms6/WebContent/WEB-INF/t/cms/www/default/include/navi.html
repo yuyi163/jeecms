@@ -5,20 +5,24 @@
         <a href="${site.url!}" target="_self" [#if !channel??]class="selected"[/#if]><span>首 页</span></a>
         </dt>
         [#list tag_list as c]
-        [#if c_index<5]
+        [#if c_index<9]
         <dt>
         <a href="${c.url}"  target="_self" [#if channel??&&channel.id==c.id] class="selected" [/#if]><span>${c.name}</span></a>
         </dt>
         [/#if]
         [/#list]
         [/@cms_channel_list]
-        <dt><a href="${base}/wldc/index.jhtml" target="blank">网络调查</a></dt>
+        <!-- 
+        <dt><a href="${base}/jxpj/index.jhtml" target="_self">教学评价</a></dt>
+         
         <dt>
-        <a href="${base}/guestbook.jspx" target="blank">留言版</a>
+        <a target="_blank" href="/">论坛-2期</a>
         </dt>
+        -->
         <dt style="border-right:0;">
-        <a href="http://bbs.jeecms.com" target="blank">论坛（二期）</a>
+        <a href="/" target="blank">在线考试-2期</a>
         </dt>
+         
     </dl>
 </div>
 <div class="clear"></div>
